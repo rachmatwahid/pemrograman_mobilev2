@@ -1,5 +1,6 @@
 # Pemrograman Mobile Pertemuan III
-## Materi
+
+Materi:
 
 1. Membuat Activity
 2. Menjalankan Activity menggunakan Intent
