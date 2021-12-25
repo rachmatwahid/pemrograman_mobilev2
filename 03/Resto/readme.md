@@ -7,3 +7,4 @@ Materi:
 3. Mengirimkan data ke Activity
 4. Menerima kembalian data dari Activity
 5. Navigasi Activity
+6. Activity State
