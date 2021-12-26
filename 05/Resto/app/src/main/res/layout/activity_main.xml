@@ -54,4 +54,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:onClick="launchInstagram"
+            android:text="Instagram"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:onClick="launchTwitter"
+            android:text="Twitter"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 </LinearLayout>

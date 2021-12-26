@@ -77,5 +77,22 @@ public class MainActivity extends AppCompatActivity {
         outState.putString(STATE_PASSWORD, registerPassword);
     }
 
+    public void launchInstagram(View view) {
+        Uri uri = Uri.parse("https://www.instagram.com");
+        Intent instagramIntent = new Intent(Intent.ACTION_VIEW, uri);
+        Intent chooserIntent = Intent.createChooser(instagramIntent, "Follow on Instagram");
 
+        if (instagramIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(chooserIntent);
+        }
+    }
+
+    public void launchTwitter(View view) {
+        Uri uri = Uri.parse("https://www.twitter.com");
+        Intent twitterIntent = new Intent(Intent.ACTION_VIEW, uri);
+
+        if (twitterIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(twitterIntent);
+        }
+    }
 }

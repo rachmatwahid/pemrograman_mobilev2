@@ -9,7 +9,7 @@
     tools:context=".MenuActivity">
 
     <TextView
-        android:text="Menu"
+        android:text="@string/menu"
         android:textSize="64sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -27,7 +27,7 @@
 
         <TextView
             android:textSize="32sp"
-            android:text="Total"
+            android:text="@string/total"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -35,7 +35,7 @@
         <TextView
             android:id="@+id/textViewTotal"
             android:textSize="32sp"
-            android:text="99.000"
+            android:text="@string/zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
@@ -43,27 +43,7 @@
     <Button
         android:id="@+id/buttonReset"
         android:onClick="resetTotalPrice"
-        android:text="Reset"
+        android:text="@string/reset"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:onClick="launchInstagram"
-            android:text="Instagram"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:onClick="launchTwitter"
-            android:text="Twitter"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
 </LinearLayout>
