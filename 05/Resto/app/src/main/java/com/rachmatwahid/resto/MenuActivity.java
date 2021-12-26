@@ -12,22 +12,28 @@ import java.util.HashMap;
 
 public class MenuActivity extends AppCompatActivity {
 
-    TextView textViewMixedRice, textViewFriedRice, textViewNoodle, textViewMeatball, textViewFriedChicken, textViewTotal;
+    TextView
+            textViewMixedRice,
+            textViewFriedRice,
+            textViewNoodle,
+            textViewMeatball,
+            textViewFriedChicken,
+            textViewTotal;
 
     HashMap<String, Integer> price = new HashMap();
 
-    Integer totalPrice = 0;
+    Integer mixedRicePrice = 0, friedRicePrice = 0, noodlePrice = 0, meatballPrice = 0, friedChickenPrice = 0, totalPrice = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        price.put("mixedRice", 10000);
-        price.put("friedRice", 12000);
-        price.put("noodle", 9500);
-        price.put("meatball", 14000);
-        price.put("friedChicken", 13500);
+        price.put("Mixed Rice", 10000);
+        price.put("Fried Rice", 12000);
+        price.put("Noodle", 9500);
+        price.put("Meatball", 14000);
+        price.put("Fried Chicken", 13500);
 
         textViewMixedRice = findViewById(R.id.textViewMixedRice);
         textViewFriedRice = findViewById(R.id.textViewFriedRice);
@@ -60,16 +66,36 @@ public class MenuActivity extends AppCompatActivity {
     public void selectDishes(View view) {
         switch (view.getId()) {
             case R.id.textViewMixedRice:
-                totalPrice += price.get("mixedRice");
+                mixedRicePrice += price.get("Mixed Rice");
+                totalPrice = countTotalPrice(mixedRicePrice);
+                break;
             case R.id.textViewFriedRice:
-                totalPrice += price.get("friedRice");
+                friedRicePrice += price.get("Fried Rice");
+                totalPrice += countTotalPrice(friedRicePrice);
+                break;
             case R.id.textViewNoodle:
-                totalPrice += price.get("noodle");
+                noodlePrice += price.get("Noodle");
+                totalPrice += countTotalPrice(noodlePrice);
+                break;
             case R.id.textViewMeatball:
-                totalPrice += price.get("meatball");
+                meatballPrice += price.get("Meatball");
+                totalPrice += countTotalPrice(meatballPrice);
+                break;
             case R.id.textViewFriedChicken:
-                totalPrice += price.get("friedChicken");
+                friedChickenPrice += price.get("Fried Chicken");
+                totalPrice += countTotalPrice(friedChickenPrice);
+                break;
         }
-        textViewTotal.setText(totalPrice);
+        textViewTotal.setText(totalPrice.toString());
+    }
+
+    private Integer countTotalPrice(Integer dishPrice) {
+        totalPrice += dishPrice;
+        return totalPrice;
+    }
+
+    public void resetTotalPrice(View view) {
+        totalPrice = 0;
+        textViewTotal.setText(totalPrice.toString());
     }
 }
