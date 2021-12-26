@@ -26,6 +26,27 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:textSize="32sp"
+            android:text="Total"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:textSize="32sp"
+            android:text="99.000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
             android:onClick="launchInstagram"
             android:text="Instagram"
             android:layout_weight="1"

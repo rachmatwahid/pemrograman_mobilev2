@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    tools:context=".MenuActivity">
 
     <TextView
+        android:onClick="selectDishes"
+        android:id="@+id/textViewMixedRice"
         android:text="Mixed Rice"
         android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:onClick="selectDishes"
+        android:id="@+id/textViewFriedRice"
         android:text="Fried Rice"
         android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:onClick="selectDishes"
+        android:id="@+id/textViewNoodle"
         android:text="Noodle"
         android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:onClick="selectDishes"
+        android:id="@+id/textViewMeatball"
         android:text="Meatball"
         android:textSize="32sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:onClick="selectDishes"
+        android:id="@+id/textViewFriedChicken"
         android:text="Fried Chicken"
         android:textSize="32sp"
         android:layout_width="match_parent"
