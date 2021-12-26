@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Resto</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="app_description">Order now and your food will arrive shortly</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="menu">Menu</string>
+    <string name="total">Total</string>
+    <string name="zero">0</string>
+    <string name="reset">Reset</string>
+    <string name="checkout">Checkout</string>
+</resources>
