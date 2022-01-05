@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <LinearLayout
+        android:layout_margin="@dimen/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/normal"
+            android:src="@drawable/mixedrice" />
+
+        <TextView
+            android:id="@+id/textViewMixedRice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectDishes"
+            android:text="Mixed Rice"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/normal"
+            android:src="@drawable/friedrice" />
+
+        <TextView
+            android:id="@+id/textViewFriedRice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectDishes"
+            android:text="Fried Rice"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/normal"
+            android:src="@drawable/noodle" />
+
+        <TextView
+            android:id="@+id/textViewNoodle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectDishes"
+            android:text="Noodle"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/normal"
+            android:src="@drawable/meatball" />
+
+        <TextView
+            android:id="@+id/textViewMeatball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectDishes"
+            android:text="Meatball"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="@dimen/normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="@dimen/normal"
+            android:src="@drawable/friedchicken" />
+
+        <TextView
+            android:id="@+id/textViewFriedChicken"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="selectDishes"
+            android:text="Fried Chicken"
+            android:textSize="32sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
