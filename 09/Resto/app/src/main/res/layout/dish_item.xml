@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/normal"
+    android:layout_height="wrap_content">
+
+    <!-- TODO: 5 Membuat leyout setiap item -->
+    <ImageView
+        android:id="@+id/imageViewDish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="@dimen/normal"
+        android:src="@drawable/mixedrice" />
+
+    <TextView
+        android:id="@+id/textViewDish"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="match_parent"
+        android:text="Mixed Rice"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:text="99000"
+        android:textSize="24sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
